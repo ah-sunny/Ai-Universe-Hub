@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Universe Hub</title>
+    <!-- Daisy UI && Tailwine -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header class="container mx-auto my-6">
+        <!-- nabbar -->
+        <nav class="flex justify-between">
+            <div  class=" text-4xl font-extrabold">
+                <p>Finding Ai</p>
+            </div>
+            <div>
+                <ul class="hidden lg:flex gap-8 font-bold">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Destination</a></li>
+                    <li><a href="">Search</a></li>
+                </ul>
+            </div>
+            <div class=" flex gap-2 p-2 text-xl font-bold rounded-xl  border-[#1DD10066] border-2 text-primary-clr bg-[#1DD1001A] ">
+                <p>Ai point</p>
+                <!-- <img src="./images/bus-icon.png" alt=""> -->
+            </div>
+        </nav>
+
+    </header>
+    
+    <main class="container mx-auto">
+        <section>
+            <!-- search bar -->
+            <div class="bg-gray-300 p-5 mb-4 rounded-2xl space-y-2">
+                <h1 class="text-4xl underline text-center font-bold ">Search Ai</h1>
+                <div class="text-center space-x-5">
+                    <input id="search_phone" type="text" placeholder="search your phone"
+                        class="input input-bordered input-secondary w-full max-w-xs" />
+                    <button onclick="searchHandleAi()" class="btn btn-active btn-accent">search</button>
+                </div>
+            </div>
+
+
+
+            <!--  -->
+        </section>
+    </main>
+
+    <footer class="p-14 lg:p-20 bg-neutral mt-20">
+        <div class="footer items-center  text-neutral-content  border-b-2 border-dashed pb-9 ">
+        
+            <aside class=" flex flex-col gap-5">
+              <h1 class="text-6xl font-extrabold ">Finding AI</h1>
+              <p>Finding AI is a digital platform to make tour daily commutinh better</p> 
+            </aside> 
+            <nav class="grid-cols-1 gap-4 md:place-self-center md:justify-self-end">
+              <h1>Download our app</h1>
+              <div class="flex gap-2 bg-black p-4 border-2 border-white rounded-2xl">
+                    <!-- <img src="./images/playstore.png" alt=""> -->
+                    <div>
+                        <p class="font-medium">GET IT ON</p>
+                        <h1 class="text-3xl font-bold">Google Play</h1>
+                    </div>
+              </div>
+            </nav>
+    
+        </div> 
+        <div class=" flex flex-col lg:flex-row gap-5 justify-between text-white my-5 lg:my-9">
+                <div>
+                    <p>Copyright © All right reserved, P-Ticket service limited 2024</p>
+                </div>
+                <div class=" flex flex-col lg:flex-row gap-5">
+                    <p>Terms & Condition</p>
+                    <p>Return & refund policy</p>
+                    <p>Privacy policy</p>
+                </div>
+        </div>
+    
+    </footer> 
+    
+    <script src="./aiUniverse.js"></script>
+</body>
+</html>
